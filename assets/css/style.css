@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 100%;
+    margin: 0 auto;
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+    text-align: center;
+    background-color: #CDE8B2;
+    color: #255048 ;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    overflow-x: hidden;
+}
+h1 {  
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+@media(max-width: 768px) {
+    h1 {
+        font-size: 5rem;
+    }
+}
+@media(min-width: 769px) {
+    h1 {
+        font-size: 15rem;
+    }
+}
+footer {
+    margin-top: 50px;
+    font-size: 14px;
+}
+footer iframe {
+    margin: 20px 0;
+}
+.copy {
+    margin-top: 10px;
+}
+.pixuleco {
+    width: 300px;
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-animation: bounce 1s reverse ease-in-out infinite;
+    -moz-animation: bounce 1s reverse ease-in-out infinite;
+    animation: bounce 1s reverse ease-in-out infinite;
+}
+@keyframes bounce {
+    from {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+    }
+    50% {
+        -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+    }
+    to {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-bf">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <meta property="og:url"           content="https://www.saraivaestanamorando.com.br" />
+        <meta property="og:type"          content="website" />
+        <meta property="og:title"         content="Saraiva está namorando?" />
+        <meta property="og:description"   content="Informação em tempo real se o nosso amigo Saraiva está namorando" />
+        <meta property="og:image"         content="https://www.saraivaestanamorando.com.br/assets/images/solteiro.png" />
+
+        <!--ate 256 caracteres  -->
+        <meta name="description" content="Informação em tempo real se o nosso amigo Saraiva está namorando">
+
+        <title>Saraiva está namorando?</title>
+
+        <link rel="stylesheet" href="assets/css/reset.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+
+    </head>
+    <body>
+        <h1 title="O nosso amigo Saraiva está namorando?">Não!</h1>
+
+        <img src="assets/images/solteiro.png" alt="Saraiva" class="saraiva">
+
+        <footer>
+            <h5>Última atualização: <span id="date"></span></h5>
+            <h6 class="copy">&copy; O Saraiva está namorando? - Todos os direitos reservados </h6>
+        </footer>
+
+        <script>
+         (function myFunction() {
+             var data = new Date();
+             var dataDia = data.getDate();
+             var dataMes = data.getMonth()+1;
+             document.getElementById("date").innerHTML = dataDia +"/"+dataMes;
+         })();
+        </script>
+
+        <script>
+         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+         })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+         ga('create', 'UA-102492112-1', 'auto');
+         ga('send', 'pageview');
+
+        </script>
+    </body>
+</html>
